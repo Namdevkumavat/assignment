@@ -1,0 +1,39 @@
+<app-header></app-header>
+<h1 class="title">{{data.name}}   (@{{data.username}})</h1>
+<div class="btn1" mat-tab-nav-bar [tabPanel]="tabPanel">
+    <a  mat-tab-link routerLink="/profile/3/summary">User Details</a>
+    <a mat-tab-link routerLink="/profile/3/albums">User Albums</a>
+    <a mat-tab-link routerLink="/profile/3/posts">Posts</a>
+</div>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+<div>
+    <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+            <div class="image">
+                <img src="./../assets/images/avtar.png" alt="avtar" class="avtar"
+                    class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="part2">
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td><b>Email:</b> {{ data.email}}</td>
+                            <td><b>Phone:</b> {{ data.phone}}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Company Name :</b> {{ data.company.name}}</td>
+                            <td><b>Website :</b> {{ data.website}}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="address"><b>Address :</b><br/><b>street-</b> {{ data.address.street}}<br/><b>suite-</b> {{
+                                    data.address.suite}}<br><b>city-</b> {{ data.address.city}}<br><b>zipcode-</b> {{
+                                    data.address.zipcode}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<app-footer></app-footer>

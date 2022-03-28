@@ -1,0 +1,38 @@
+.container {
+  width: 35%;
+  margin-top: 80px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 20px rgb(0, 101, 253);
+}
+
+.form-login {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px 40px 50px;
+  /* border: 5px solid rgb(55, 123, 248); */
+  border-radius: 12px;
+}
+
+.form-login .form-login-heading {
+  margin: 15px 0px 15px 0px;
+}
+
+input[type=text],
+input[type=password] {
+  margin-bottom: 20px;
+  width: 60%;
+  padding: 7px 15px;
+  margin: 9px 0;
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  font-weight: bold;
+}
+
+.btn{
+  padding: 7px;
+  margin: 15px 0px 0px 140px;
+  width: 35%;
+}

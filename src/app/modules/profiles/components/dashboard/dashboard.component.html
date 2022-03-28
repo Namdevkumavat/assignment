@@ -1,0 +1,25 @@
+<app-header></app-header>
+<router-outlet></router-outlet>
+
+<div class="head">
+  <h1 class="title" >PROFILES</h1>
+  <div class="input-group">
+    <input type="search"
+    class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <button type="button" class="btn btn-outline-primary">search</button>
+  </div>
+  <div class="container">
+    <div class="card" *ngFor="let user of users">
+          <div class="part1">
+            <img class="Avtar"  src="./../assets/images/avtar.png">
+          </div>
+          <div class="part2">
+            <h5 class="text"><b>{{user.name}}</b></h5>
+            <h6 class="text">{{user.email}}</h6>
+            <h6 class="text">{{user.phone}}</h6>
+            <button class="btn-primary" routerLink="../profile/{{user.id}}">View Profile</button>
+          </div>   
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
