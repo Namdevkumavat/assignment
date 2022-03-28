@@ -36,3 +36,8 @@ label {
   margin: 15px 0px 0px 140px;
   width: 35%;
 }
+
+.title{
+  font-size: 30px;
+  font-weight: bold;
+}

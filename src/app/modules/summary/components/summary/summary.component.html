@@ -1,9 +1,9 @@
 <app-header></app-header>
-<h1 class="title">{{data.name}}   (@{{data.username}})</h1>
-<div class="btn1" mat-tab-nav-bar [tabPanel]="tabPanel">
-    <a  mat-tab-link routerLink="/profile/3/summary">User Details</a>
-    <a mat-tab-link routerLink="/profile/3/albums">User Albums</a>
-    <a mat-tab-link routerLink="/profile/3/posts">Posts</a>
+<h1 class="title">{{data.name}}   (@{{data.username}})</h1><br/><br/><br/><br/><br/><br/>
+<div  mat-tab-nav-bar [tabPanel]="tabPanel">
+    <a class="btn1" mat-tab-link routerLink="/profile/1/summary">User Details</a>
+    <a class="btn1" mat-tab-link routerLink="/profile/1/albums">User Albums</a>
+    <a class="btn1" mat-tab-link routerLink="/profile/1/posts">Posts</a>
 </div>
 <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 <div>

@@ -1,14 +1,21 @@
 <app-header></app-header>
-<h1>{{data.title}} (@{{data.body}})</h1>
+
 <nav mat-tab-nav-bar [tabPanel]="tabPanel">
-    <a mat-tab-link routerLink="/profile/3/summary">User Details</a>
-    <a mat-tab-link routerLink="/profile/3/albums">User Albums</a>
-    <a mat-tab-link routerLink="/profile/3/posts">Posts</a>
+  <a class="btn1" mat-tab-link routerLink="/profile/1/summary">User Details</a>
+  <a class="btn1" mat-tab-link routerLink="/profile/1/albums">User Albums</a>
+  <a class="btn1" mat-tab-link routerLink="/profile/1/posts">Posts</a>
   </nav>
   <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 <div>
-  <h1>Posts</h1>
-  <pre>{{data|json}}</pre>
+  <p class="albumtitle">Posts</p> 
+  <div class="content">
+    <h1>It was a good day</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h1>Meh</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
 </div>
 <div>
 <app-footer></app-footer>
